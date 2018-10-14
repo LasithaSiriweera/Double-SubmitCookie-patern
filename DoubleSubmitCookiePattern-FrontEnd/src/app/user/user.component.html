@@ -1,0 +1,12 @@
+<div (click)="logOut()" class="logout">
+  <p >logout</p>
+</div>
+<div class="login-page">
+  <div class="form">
+    <div class="login-form">
+      <input type="number" [(ngModel)]="csrfJson.amount"  value="" placeholder="Amount" />
+      <input type="hidden" [(ngModel)]="csrfJson.csrf" value="">
+      <button (click)="transferToken()">Transfer</button>
+    </div>
+  </div>
+</div>
